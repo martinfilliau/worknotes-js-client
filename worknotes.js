@@ -20,7 +20,7 @@ var Manager;
         $('#pager-header').html($('<span/>').text('displaying ' + Math.min(total, offset + 1) + ' to ' + Math.min(total, offset + perPage) + ' of ' + total));
       }
     }));
-    var fields = [ 'activiy', 'project' ];
+    var fields = [ 'activity', 'project' ];
     for (var i = 0, l = fields.length; i < l; i++) {
       Manager.addWidget(new AjaxSolr.TagcloudWidget({
         id: fields[i],
