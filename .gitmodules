@@ -1,0 +1,3 @@
+[submodule "ajax-solr"]
+	path = ajax-solr
+	url = git://github.com/evolvingweb/ajax-solr.git
