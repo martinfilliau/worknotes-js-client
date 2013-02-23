@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Work notes</title>
+    <link rel="stylesheet" type="text/css" href="worknotes.css" media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="worknotes.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/Core.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/AbstractManager.js"></script>
+    <script type="text/javascript" src="ajax-solr/managers/Manager.jquery.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/Parameter.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/ParameterStore.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/AbstractWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/examples/reuters/widgets/ResultWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/helpers/jquery/ajaxsolr.theme.js"></script>
+    <script type="text/javascript" src="worknotes.theme.js"></script>
+    <script type="text/javascript" src="ajax-solr/examples/reuters/js/jquery.livequery.js"></script>
+    <script type="text/javascript" src="ajax-solr/widgets/jquery/PagerWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/AbstractFacetWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/examples/reuters/widgets/TagcloudWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/examples/reuters/widgets/CurrentSearchWidget.9.js"></script>
+    <link rel="stylesheet" type="text/css" href="ajax-solr/examples/reuters/ext/jquery.autocomplete.css" media="screen" />
+    <script type="text/javascript" src="ajax-solr/examples/reuters/ext/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="ajax-solr/core/AbstractTextWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/examples/reuters/widgets/AutocompleteWidget.js"></script>
+    <script type="text/javascript" src="ajax-solr/helpers/ajaxsolr.support.js"></script>
+    <script type="text/javascript" src="ajax-solr/helpers/ajaxsolr.theme.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="ajax-solr/examples/reuters/ext/smoothness/jquery-ui.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="ajax-solr/examples/reuters/ext/smoothness/ui.theme.css" media="screen" />
+    <script type="text/javascript" src="ajax-solr/examples/reuters/widgets/CalendarWidget.js"></script>
+    
+</head>
+<body>
+    <div id="wrap"> 
+      <div id="header">
+        <h1>Worknotes</h1>
+      </div>
+
+      <div class="right">
+        <div id="result">
+          <div id="navigation">
+            <ul id="pager"></ul>
+            <div id="pager-header"></div>
+          </div>
+          <div id="docs"></div>
+        </div>
+      </div>
+
+      <div class="left">
+        <h2>Current Selection</h2>
+        <ul id="selection"></ul>
+
+        <h2>Search</h2>
+        <span id="search_help">(press ESC to close suggestions)</span>
+        <ul id="search">
+          <input type="text" id="query" name="query"/>
+        </ul>
+
+        <h2>Projects</h2>
+        <div class="tagcloud" id="projects"></div>
+
+        <h2>Activities</h2>
+        <div class="tagcloud" id="activities"></div>
+
+        <h2>By Date</h2>
+        <div id="calendar"></div>
+
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>  
+</body>
